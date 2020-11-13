@@ -1,0 +1,91 @@
+GIT//
+
+++https://git-scm.com/book/es/v2/ 
+
+
+--*clase1*--
+
+git init <- carpeta maestra desde entorno local/directorio del proyecto
+
+git configura <- nombre usuario 
+$ git config --global user.name "mjulianacarvajal"
+
+git configura <- correo
+User@DESKTOP-KH2S2L2 MINGW64 ~/control_git (master)
+$ git config --global user.mail mjulianacarvajal@gmail.com
+
+$ git status <- ver el estado
+
+git add <- 
+
+$git branch
+
+
+$ git config --global core.editor XXX  -> se puede con notepad?
+
+
+--**clase2**--
+clone, <- desde github 
+
+User@DESKTOP-KH2S2L2 MINGW64 ~
+$ git clone https://github.com/red-lilith/paisaje_sonoro
+Cloning into 'paisaje_sonoro'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 11 (delta 0), reused 11 (delta 0), pack-reused 0
+Receiving objects: 100% (11/11), 7.87 MiB | 451.00 KiB/s, done.
+
+$ git init
+Initialized empty Git repository in C:/Users/User/.git/
+
+
+User@DESKTOP-KH2S2L2 MINGW64 ~ (master)
+$ git remote add origin hhtps://github.com/mjulianacarvajal/clase.git
+
+
+
+User@DESKTOP-KH2S2L2 MINGW64 ~/paisaje_sonoro (master)
+$ git push origin -u master
+remote: Permission to red-lilith/paisaje_sonoro.git denied to mjulianacarvajal.
+fatal: unable to access 'https://github.com/red-lilith/paisaje_sonoro/': The requested URL returned error: 403
+
+
+
+
+
+--- clase 3
+
+
+
+C O M A N D O S   B Á S I C O S   I N I C I A L E S
+Inicializar repositorio (solo para repositorios desde cero)
+git init
+git remote add origin mi_url
+
+Agregar archivos con cambios
+git add .
+git commit -m “cambios hechos”
+
+Subir los cambios
+git push ó git push origin nombre_rama (si es primera vez)
+
+Después de hacer cambios
+git checkout -- nombre_archivo (revertir cambios en un archivo cambiado)
+
+R A M A S
+git branch (listar ramas actuales - la marcada con * es la actual rama)
+git brach nueva_rama (crea nueva rama - sin cambiarse a ella)
+git checkout nueva_rama (cambia a la rama)
+ó 
+git checkout -b nueva_rama (crea nueva rama y se cambia a ella)
+git branch -d nueva_rama (elimina la rama)
+git merge origin/nombre_rama (fusiona la rama actual con otra rama)
+
+git pull (bajar últimos cambios)
+
+P O S I B L E S   C O N F L I C T O S
+git fetch origin
+git rebase origin/master
+git add nombre_archivo
+git rebase --continue

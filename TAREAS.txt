@@ -1,0 +1,6 @@
+Tareas Pendientes:
+
+1. Hacer la entrega de GIT
+
+2. Tomar las clases de  HTML y sobre la carpeta construir la pagina web para
+juntar ambas evidencias.
