@@ -1,0 +1,3 @@
+[submodule "gfw-mapbuilder"]
+	path = gfw-mapbuilder
+	url = https://github.com/wri/gfw-mapbuilder
